@@ -1,0 +1,5 @@
+<span>Please click the button to get Customer data : <button (click)="displayCustomer()" >Get Customer</button> </span>
+
+<ul>
+  <li *ngFor="let cust of custData">{{cust.first_name}} {{cust.last_name}} </li>
+</ul>

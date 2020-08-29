@@ -1,0 +1,11 @@
+<p>
+  Please select the currency
+</p>
+<select [(ngModel)]='sel_cur'>
+  <option [(ngValue)] = 'currency' *ngFor="let currency of currencies">{{currency.name}}</option>
+</select>
+
+<p>You have selected {{sel_cur.name}} and it's symbol <b>{{sel_cur.symbol}}</b></p>
+
+<input (change)="tax($event)" type="checkbox" name="" id=""> <span> Opt for Tax inclusion </span>
+                                                    <span [ngClass]='cc?"green":"red"' >✔</span> <br><br>

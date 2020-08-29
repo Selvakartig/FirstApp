@@ -1,0 +1,7 @@
+<p *ngFor="let item of items; index as i">Item number {{i+1}} is {{item.name}} and its cost is {{item.price}}</p>
+
+<span *ngIf="dis_active">Great you have 10% discount</span>
+
+<span [ngClass]="colorChange?'green':'red'">Please visit out Store our further details.</span>
+
+<span [ngStyle]="{display:displayLink?'block':'none'}">Our Online Store : https://storeonline.com </span>
